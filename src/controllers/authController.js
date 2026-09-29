@@ -2,7 +2,7 @@ const bcrypt = require('bcrypt');
 const jwt = require('jsonwebtoken');
 const User = require('../models/User');
 
-const JWT_SECRET = process.env.JWT_SECRET || 'supersecret_cAsports_2026_key';
+const JWT_SECRET = process.env.JWT_SECRET;
 
 exports.register = async (req, res) => {
     try {
